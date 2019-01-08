@@ -10,11 +10,14 @@ e) Glede na tabelo, ustrezno konfigurirajte pine senzorja nagiba LIS3DSH:
 SPI1 _SCK SPI1_MOSI CS_I2C/SPI SPI1_MISO INT1/DRDY
     PA5      PA7          PE3      PA6      PE0
 
-V zavihku Pinout izberite SPI1 in izberite Full-Duplex Master. Kateri pini se obarvajo zeleno? _____, ____
-in ______.
+V zavihku Pinout izberite SPI1 in izberite Full-Duplex Master. Kateri pini se obarvajo zeleno? PA5, PA6
+in PA7.
 
-g) V gumbu GPIO aktiviramo salve select CS_I2C/SPI na High GPIO Output level. Kateri pin je to? ____.
+g) V gumbu GPIO aktiviramo salve select CS_I2C/SPI na High GPIO Output level. Kateri pin je to? PE3.
 
 h) V gumbu SPI1 nastavimo prescaler na takšno vrednost, da bo hitrost prenosa 1 MBits/s (baud rate).
-Koliko je vrednost skaliranja? _______.
+Koliko je vrednost skaliranja? 8. 
+
+Komentar: 
+pri Configuration SPI1 ne moramo nastaviti hitrost prenosa na 1Mbit/s, a lahko nastavimo na približni 780kbit/s s prescalerjem 8
 
